@@ -1,7 +1,7 @@
 body {
   background:
     linear-gradient(180deg, rgba(23,29,37,.22) 0%, rgba(23,29,37,.38) 48%, rgba(23,29,37,.72) 100%),
-    url("WSBG.png") top center / cover no-repeat,
+    url("WSBG-gold.webp") top center / cover no-repeat,
     var(--bg-deep) !important;
 }
 
