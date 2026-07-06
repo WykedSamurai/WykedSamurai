@@ -35,7 +35,7 @@ body {
   line-height: 1.6;
   background:
     linear-gradient(180deg, rgba(23,29,37,.16) 0%, rgba(23,29,37,.30) 48%, rgba(23,29,37,.66) 100%),
-    url("wyked-samurai-ttrpg-bg.webp") top center / cover no-repeat,
+    url("WSBG.png") top center / cover no-repeat,
     var(--bg-deep);
   overflow-x: hidden;
 }
