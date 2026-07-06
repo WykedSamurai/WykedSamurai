@@ -1,4 +1,16 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/projects/fabled-compass.html",
+      "destination": "https://fabled-compass.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/projects/fabled-compass",
+      "destination": "https://fabled-compass.vercel.app/",
+      "permanent": false
+    }
+  ]
 }
