@@ -1,0 +1,36 @@
+body {
+  background:
+    url("WSBG-gold.webp") top center / 100% auto no-repeat,
+    linear-gradient(180deg, #171d25 0%, #202934 46%, #171d25 100%) !important;
+}
+
+body::before,
+body::after {
+  display: none !important;
+}
+
+.site-header {
+  background: rgba(20, 26, 34, .78) !important;
+}
+
+.hero {
+  background: linear-gradient(90deg, rgba(18,24,31,.68) 0%, rgba(18,24,31,.38) 48%, rgba(18,24,31,.08) 100%) !important;
+}
+
+.hero-panel,
+.card,
+.ip-block,
+.page-title,
+.story-panel {
+  background: linear-gradient(180deg, rgba(35,44,55,.78), rgba(28,35,44,.70)) !important;
+}
+
+.hero::before,
+.hero::after {
+  display: none !important;
+}
+
+.hero h1,
+.lead {
+  text-shadow: 0 2px 16px rgba(0,0,0,.60);
+}
