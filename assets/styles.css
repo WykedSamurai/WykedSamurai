@@ -1,8 +1,8 @@
 :root {
   --bg: #1b222b;
   --bg-deep: #171d25;
-  --panel: rgba(36,45,56,.86);
-  --panel-strong: rgba(42,53,66,.92);
+  --panel: rgba(36,45,56,.78);
+  --panel-strong: rgba(42,53,66,.84);
   --text: #ded8cd;
   --muted: #b4bec8;
   --quiet: #8d98a5;
@@ -34,9 +34,9 @@ body {
   color: var(--text);
   line-height: 1.6;
   background:
-    radial-gradient(circle at 15% 8%, rgba(193,154,82,.09), transparent 25rem),
-    radial-gradient(circle at 85% 12%, rgba(96,117,138,.14), transparent 26rem),
-    linear-gradient(180deg, var(--bg) 0%, #202934 45%, var(--bg-deep) 100%);
+    linear-gradient(180deg, rgba(23,29,37,.72) 0%, rgba(27,34,43,.86) 45%, rgba(23,29,37,.94) 100%),
+    url("wyked-samurai-ttrpg-bg.webp") top center / cover fixed no-repeat,
+    var(--bg-deep);
   overflow-x: hidden;
 }
 
@@ -45,15 +45,25 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: -2;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 15% 8%, rgba(193,154,82,.10), transparent 25rem),
+    radial-gradient(circle at 85% 12%, rgba(96,117,138,.10), transparent 26rem),
+    linear-gradient(90deg, rgba(23,29,37,.82) 0%, rgba(23,29,37,.50) 46%, rgba(23,29,37,.22) 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
   background-image:
-    linear-gradient(rgba(222,216,205,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(222,216,205,.02) 1px, transparent 1px);
+    linear-gradient(rgba(222,216,205,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(222,216,205,.014) 1px, transparent 1px);
   background-size: 82px 82px;
   mask-image: linear-gradient(to bottom, #111, transparent 78%);
 }
-
-body::after { display: none; }
 
 .site-header {
   width: min(1180px, calc(100% - 2rem));
@@ -64,7 +74,7 @@ body::after { display: none; }
   gap: 1rem;
   padding: .65rem .95rem;
   border: 1px solid var(--line);
-  background: rgba(34,43,54,.93);
+  background: rgba(34,43,54,.76);
   position: sticky;
   top: 1rem;
   z-index: 10;
@@ -114,10 +124,9 @@ main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
   border: 1px solid var(--line);
   border-radius: 1.35rem;
   background:
-    radial-gradient(circle at 8% 16%, rgba(193,154,82,.16), transparent 22rem),
-    radial-gradient(circle at 82% 18%, rgba(96,117,138,.18), transparent 24rem),
-    linear-gradient(135deg, rgba(42,53,66,.96), rgba(31,40,52,.88));
+    linear-gradient(90deg, rgba(23,29,37,.82) 0%, rgba(23,29,37,.64) 52%, rgba(23,29,37,.20) 100%);
   box-shadow: 0 18px 44px var(--shadow);
+  backdrop-filter: blur(2px);
 }
 
 .hero::before {
@@ -127,10 +136,10 @@ main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
   z-index: -2;
   background:
     linear-gradient(115deg, transparent 0 20%, rgba(193,154,82,.08) 20.2%, transparent 20.6% 48%, rgba(222,216,205,.05) 48.2%, transparent 48.6%),
-    linear-gradient(rgba(222,216,205,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(222,216,205,.02) 1px, transparent 1px);
+    linear-gradient(rgba(222,216,205,.020) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(222,216,205,.015) 1px, transparent 1px);
   background-size: auto, 68px 68px, 68px 68px;
-  opacity: .65;
+  opacity: .48;
 }
 
 .hero::after {
@@ -159,9 +168,10 @@ main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
   border-radius: 1.15rem;
   padding: clamp(.95rem, 1.6vw, 1.35rem);
   box-shadow: 0 16px 38px var(--shadow);
+  backdrop-filter: blur(10px);
 }
 
-.hero-panel { position: relative; overflow: hidden; backdrop-filter: blur(6px); }
+.hero-panel { position: relative; overflow: hidden; }
 .hero-panel::before { content: ""; position: absolute; width: 12rem; height: 12rem; right: -5rem; top: -5rem; border-radius: 50%; background: radial-gradient(circle, var(--accent-soft), transparent 68%); }
 .hero-panel h2, .card h2, .ip-block h2, .story-panel h2 { margin-top: 0; }
 .hero-panel p, .muted, .role { color: var(--muted); }
@@ -181,7 +191,7 @@ main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
 .stat strong { display: block; color: var(--text); }
 .stat span { color: var(--muted); font-size: .86rem; }
 .metric-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .9rem; margin-top: 1.35rem; }
-.metric { min-height: 5.65rem; display: grid; place-items: center; text-align: center; border: 1px solid var(--accent-glow); border-radius: .95rem; background: var(--accent-soft); box-shadow: 0 10px 24px rgba(18,27,36,.18); }
+.metric { min-height: 5.65rem; display: grid; place-items: center; text-align: center; border: 1px solid var(--accent-glow); border-radius: .95rem; background: var(--accent-soft); box-shadow: 0 10px 24px rgba(18,27,36,.18); backdrop-filter: blur(8px); }
 .metric strong { display: block; font-size: 1.2rem; color: var(--accent); }
 .metric span { color: var(--muted); font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; }
 
@@ -239,6 +249,7 @@ section { padding: 1.9rem 0; }
   border: 1px solid var(--line);
   border-radius: .95rem;
   background: rgba(36,45,56,.62);
+  backdrop-filter: blur(8px);
 }
 .timeline-item strong { color: var(--accent); }
 .timeline-item p { margin: 0; color: var(--muted); }
@@ -246,8 +257,9 @@ section { padding: 1.9rem 0; }
 footer { width: min(1180px, calc(100% - 2rem)); margin: 2.6rem auto 1rem; padding: 1.25rem 0; border-top: 1px solid var(--line); color: var(--quiet); font-size: .9rem; }
 
 @media (max-width: 920px) {
+  body { background-attachment: scroll; background-position: top right; }
   .site-header { align-items: flex-start; flex-direction: column; border-radius: 1.2rem; top: .5rem; }
-  .hero { grid-template-columns: 1fr; padding-top: 1.5rem; }
+  .hero { grid-template-columns: 1fr; padding-top: 1.5rem; background: rgba(23,29,37,.72); }
   .grid.two, .grid.three, .grid.four, .metric-row { grid-template-columns: 1fr; }
   .metric { min-height: auto; padding: 1rem; }
   .timeline-item { grid-template-columns: 1fr; }
