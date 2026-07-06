@@ -1,0 +1,36 @@
+body {
+  background:
+    linear-gradient(180deg, rgba(23,29,37,.22) 0%, rgba(23,29,37,.38) 48%, rgba(23,29,37,.72) 100%),
+    url("WSBG.png") top center / cover no-repeat,
+    var(--bg-deep) !important;
+}
+
+body::before {
+  background: linear-gradient(90deg, rgba(23,29,37,.58) 0%, rgba(23,29,37,.25) 48%, rgba(23,29,37,.06) 100%) !important;
+  background-size: auto !important;
+  mask-image: none !important;
+}
+
+body::after {
+  content: "" !important;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  display: block !important;
+  background: radial-gradient(circle at 18% 10%, rgba(193,154,82,.08), transparent 22rem) !important;
+}
+
+.hero {
+  background: linear-gradient(90deg, rgba(18,24,31,.76) 0%, rgba(18,24,31,.50) 50%, rgba(18,24,31,.12) 100%) !important;
+}
+
+.hero::before,
+.hero::after {
+  display: none !important;
+}
+
+.hero h1,
+.lead {
+  text-shadow: 0 2px 16px rgba(0,0,0,.55);
+}
