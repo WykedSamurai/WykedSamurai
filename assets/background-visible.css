@@ -1,7 +1,7 @@
 body {
   background:
-    linear-gradient(180deg, rgba(23,29,37,.76) 0%, rgba(27,34,43,.84) 46%, rgba(23,29,37,.92) 100%),
-    linear-gradient(90deg, rgba(23,29,37,.68) 0%, rgba(23,29,37,.46) 44%, rgba(23,29,37,.30) 100%),
+    linear-gradient(180deg, rgba(23,29,37,.54) 0%, rgba(27,34,43,.64) 46%, rgba(23,29,37,.78) 100%),
+    linear-gradient(90deg, rgba(23,29,37,.54) 0%, rgba(23,29,37,.34) 44%, rgba(23,29,37,.20) 100%),
     url("WSBG.png") top center / cover fixed no-repeat,
     #171d25 !important;
 }
@@ -14,9 +14,9 @@ body::before {
   z-index: -1;
   display: block !important;
   background:
-    radial-gradient(circle at 14% 10%, rgba(193,154,82,.08), transparent 26rem),
-    radial-gradient(circle at 85% 8%, rgba(96,117,138,.11), transparent 28rem),
-    rgba(23,29,37,.20) !important;
+    radial-gradient(circle at 14% 10%, rgba(193,154,82,.06), transparent 26rem),
+    radial-gradient(circle at 85% 8%, rgba(96,117,138,.08), transparent 28rem),
+    rgba(23,29,37,.08) !important;
 }
 
 body::after {
@@ -27,20 +27,20 @@ body::after {
   z-index: -1;
   display: block !important;
   background-image:
-    linear-gradient(rgba(222,216,205,.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(222,216,205,.012) 1px, transparent 1px) !important;
+    linear-gradient(rgba(222,216,205,.012) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(222,216,205,.008) 1px, transparent 1px) !important;
   background-size: 82px 82px !important;
   mask-image: linear-gradient(to bottom, #111, transparent 78%) !important;
 }
 
 .site-header {
-  background: rgba(28,35,44,.86) !important;
+  background: rgba(28,35,44,.82) !important;
 }
 
 .hero {
   min-height: auto !important;
   align-items: center;
-  background: linear-gradient(90deg, rgba(18,24,31,.82) 0%, rgba(18,24,31,.68) 48%, rgba(18,24,31,.52) 100%) !important;
+  background: linear-gradient(90deg, rgba(18,24,31,.72) 0%, rgba(18,24,31,.58) 48%, rgba(18,24,31,.44) 100%) !important;
 }
 
 .hero::before,
@@ -53,12 +53,12 @@ body::after {
 .ip-block,
 .page-title,
 .story-panel {
-  background: linear-gradient(180deg, rgba(35,44,55,.86), rgba(28,35,44,.80)) !important;
+  background: linear-gradient(180deg, rgba(35,44,55,.78), rgba(28,35,44,.72)) !important;
 }
 
 .hero h1,
 .lead {
-  text-shadow: 0 2px 16px rgba(0,0,0,.62);
+  text-shadow: 0 2px 16px rgba(0,0,0,.68);
 }
 
 .metric-row {
@@ -68,7 +68,7 @@ body::after {
 @media (max-width: 920px) {
   body {
     background:
-      linear-gradient(180deg, rgba(23,29,37,.80) 0%, rgba(27,34,43,.88) 46%, rgba(23,29,37,.94) 100%),
+      linear-gradient(180deg, rgba(23,29,37,.66) 0%, rgba(27,34,43,.76) 46%, rgba(23,29,37,.86) 100%),
       url("WSBG.png") top center / auto 100vh no-repeat,
       #171d25 !important;
   }
