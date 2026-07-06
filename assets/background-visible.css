@@ -1,28 +1,38 @@
 body {
   background:
-    url("WSBG.png") top center / 100% auto no-repeat,
-    linear-gradient(180deg, #171d25 0%, #202934 46%, #171d25 100%) !important;
+    radial-gradient(circle at 14% 10%, rgba(193,154,82,.10), transparent 26rem),
+    radial-gradient(circle at 85% 8%, rgba(96,117,138,.16), transparent 28rem),
+    linear-gradient(180deg, #1b222b 0%, #202934 46%, #171d25 100%) !important;
 }
 
-body::before,
+body::before {
+  content: "" !important;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  display: block !important;
+  background-image:
+    linear-gradient(rgba(222,216,205,.024) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(222,216,205,.018) 1px, transparent 1px) !important;
+  background-size: 82px 82px !important;
+  mask-image: linear-gradient(to bottom, #111, transparent 80%) !important;
+}
+
 body::after {
   display: none !important;
 }
 
 .site-header {
-  background: rgba(20, 26, 34, .78) !important;
+  background: rgba(28,35,44,.88) !important;
 }
 
 .hero {
-  background: linear-gradient(90deg, rgba(18,24,31,.68) 0%, rgba(18,24,31,.38) 48%, rgba(18,24,31,.08) 100%) !important;
-}
-
-.hero-panel,
-.card,
-.ip-block,
-.page-title,
-.story-panel {
-  background: linear-gradient(180deg, rgba(35,44,55,.78), rgba(28,35,44,.70)) !important;
+  min-height: clamp(500px, 70vh, 760px);
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(18,24,31,.90) 0%, rgba(18,24,31,.74) 38%, rgba(18,24,31,.44) 64%, rgba(18,24,31,.16) 100%),
+    url("WSBG.png") center center / cover no-repeat !important;
 }
 
 .hero::before,
@@ -30,7 +40,19 @@ body::after {
   display: none !important;
 }
 
+.hero-panel,
+.card,
+.ip-block,
+.page-title,
+.story-panel {
+  background: linear-gradient(180deg, rgba(35,44,55,.88), rgba(28,35,44,.82)) !important;
+}
+
 .hero h1,
 .lead {
   text-shadow: 0 2px 16px rgba(0,0,0,.60);
+}
+
+.metric-row {
+  margin-top: 1.35rem !important;
 }
