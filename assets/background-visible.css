@@ -1,8 +1,9 @@
 body {
   background:
-    radial-gradient(circle at 14% 10%, rgba(193,154,82,.10), transparent 26rem),
-    radial-gradient(circle at 85% 8%, rgba(96,117,138,.16), transparent 28rem),
-    linear-gradient(180deg, #1b222b 0%, #202934 46%, #171d25 100%) !important;
+    linear-gradient(180deg, rgba(23,29,37,.76) 0%, rgba(27,34,43,.84) 46%, rgba(23,29,37,.92) 100%),
+    linear-gradient(90deg, rgba(23,29,37,.68) 0%, rgba(23,29,37,.46) 44%, rgba(23,29,37,.30) 100%),
+    url("WSBG.png") top center / cover fixed no-repeat,
+    #171d25 !important;
 }
 
 body::before {
@@ -12,27 +13,34 @@ body::before {
   pointer-events: none;
   z-index: -1;
   display: block !important;
-  background-image:
-    linear-gradient(rgba(222,216,205,.024) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(222,216,205,.018) 1px, transparent 1px) !important;
-  background-size: 82px 82px !important;
-  mask-image: linear-gradient(to bottom, #111, transparent 80%) !important;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(193,154,82,.08), transparent 26rem),
+    radial-gradient(circle at 85% 8%, rgba(96,117,138,.11), transparent 28rem),
+    rgba(23,29,37,.20) !important;
 }
 
 body::after {
-  display: none !important;
+  content: "" !important;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  display: block !important;
+  background-image:
+    linear-gradient(rgba(222,216,205,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(222,216,205,.012) 1px, transparent 1px) !important;
+  background-size: 82px 82px !important;
+  mask-image: linear-gradient(to bottom, #111, transparent 78%) !important;
 }
 
 .site-header {
-  background: rgba(28,35,44,.88) !important;
+  background: rgba(28,35,44,.86) !important;
 }
 
 .hero {
-  min-height: clamp(500px, 70vh, 760px);
+  min-height: auto !important;
   align-items: center;
-  background:
-    linear-gradient(90deg, rgba(18,24,31,.90) 0%, rgba(18,24,31,.74) 38%, rgba(18,24,31,.44) 64%, rgba(18,24,31,.16) 100%),
-    url("WSBG.png") center center / cover no-repeat !important;
+  background: linear-gradient(90deg, rgba(18,24,31,.82) 0%, rgba(18,24,31,.68) 48%, rgba(18,24,31,.52) 100%) !important;
 }
 
 .hero::before,
@@ -45,14 +53,23 @@ body::after {
 .ip-block,
 .page-title,
 .story-panel {
-  background: linear-gradient(180deg, rgba(35,44,55,.88), rgba(28,35,44,.82)) !important;
+  background: linear-gradient(180deg, rgba(35,44,55,.86), rgba(28,35,44,.80)) !important;
 }
 
 .hero h1,
 .lead {
-  text-shadow: 0 2px 16px rgba(0,0,0,.60);
+  text-shadow: 0 2px 16px rgba(0,0,0,.62);
 }
 
 .metric-row {
   margin-top: 1.35rem !important;
+}
+
+@media (max-width: 920px) {
+  body {
+    background:
+      linear-gradient(180deg, rgba(23,29,37,.80) 0%, rgba(27,34,43,.88) 46%, rgba(23,29,37,.94) 100%),
+      url("WSBG.png") top center / auto 100vh no-repeat,
+      #171d25 !important;
+  }
 }
