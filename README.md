@@ -57,6 +57,10 @@ Fabled Compass is a professional development and hiring platform designed to mov
 
 Current status: Early alpha development. Not cleared for public use.
 
+## Deployment Notes
+
+Latest deploy trigger: background image upload confirmed.
+
 ## Recommended Site Structure
 
 ```text
@@ -78,31 +82,4 @@ wyked-samurai-site/
 │  ├─ projects/
 │  │  ├─ page.tsx
 │  │  ├─ fabled-compass/
-│  │  │  └─ page.tsx
-│  │  ├─ consulting/
-│  │  │  └─ page.tsx
-│  │  ├─ ttrpg-hub/
-│  │  │  └─ page.tsx
-│  │  └─ ai-portfolio/
-│  │     └─ page.tsx
-│  ├─ contact/
-│  │  └─ page.tsx
-│  └─ layout.tsx
-├─ components/
-│  ├─ Nav.tsx
-│  ├─ Hero.tsx
-│  ├─ FounderCard.tsx
-│  ├─ ProjectCard.tsx
-│  ├─ SkillSection.tsx
-│  └─ ContactBlock.tsx
-├─ data/
-│  ├─ founders.ts
-│  ├─ projects.ts
-│  └─ site.ts
-└─ public/
-   └─ images/
 ```
-
-## Positioning Statement
-
-Wyked Samurai is one umbrella brand, built by Penny Carter and Garrett, for multiple projects in development. Fabled Compass is the flagship project, while the larger site also supports founder profiles, professional resumes, creative technology ideas, and future business concepts.
