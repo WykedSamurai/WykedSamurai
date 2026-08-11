@@ -4,7 +4,10 @@
 /* Experience Block Styling */
 .experience-block {
   margin-bottom: 2rem;
-  padding: 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 }
 
 .exp-header {
@@ -12,6 +15,7 @@
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0.25rem;
+  gap: 2rem;
 }
 
 .exp-header h3 {
@@ -27,13 +31,13 @@
   font-size: 0.9rem;
   color: #999;
   white-space: nowrap;
-  margin-left: 2rem;
+  flex-shrink: 0;
 }
 
 .exp-company {
-  margin: 0.25rem 0 0.75rem 0;
+  margin: 0.5rem 0 0.75rem 0;
   font-size: 0.95rem;
-  color: #666;
+  color: #aaa;
 }
 
 .content-list.compact {
@@ -43,7 +47,7 @@
 
 .content-list.compact li {
   margin-bottom: 0.5rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .content-list.compact li:last-child {
