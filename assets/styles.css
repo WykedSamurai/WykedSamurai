@@ -1,2 +1,51 @@
 @import url("styles-crisp.css");
 @import url("background-visible.css");
+
+/* Experience Block Styling */
+.experience-block {
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+.exp-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exp-dates {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #999;
+  white-space: nowrap;
+  margin-left: 2rem;
+}
+
+.exp-company {
+  margin: 0.25rem 0 0.75rem 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.content-list.compact {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.content-list.compact li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.content-list.compact li:last-child {
+  margin-bottom: 0;
+}
